@@ -1,11 +1,11 @@
 # Predictive Maintenance and Machine Health Monitoring
-The rising of new technology i.e, Internet of Things, heavy industry has started adopting sensor-based data collection to solve its biggest challenges, principal among them being process downtime in the form of shutdowns and process delays.
-        Machine monitoring, also called predictive maintenance or condition monitoring, is the practice of monitoring electrical equipment through sensors in order to accumulate diagnostic data. To achieve this, data acquisition systems and data loggers are used to monitor all kinds of equipment, such as boilers, motors, and engines.
+The rising of new technology i.e, Internet of Things, heavy industry has started adopting sensor-based data collection to solve its biggest challenges, principal among them process downtime in the form of shutdowns and process delays.
+Machine monitoring also called predictive maintenance or condition monitoring is the practice of monitoring electrical equipment through sensors in order to accumulate diagnostic data. To achieve this, data acquisition systems and data loggers are used to monitor all kinds of equipment, such as boilers, motors, and engines.
 Following condition are measured:
 - Temperature and Humidity Data Monitoring
 - Current and Voltage Monitoring
 - Vibration Monitoring
-In this article, we will read current and publish the data on Ubidots.  ubidots supports graphs, UI, notifications, and emails.  These features make it ideal for predictive maintenance analysis.We will also get the data in google sheets which will make predictive maintenance analysis more easier.
+In this article, we will read current and publish the data on Ubidots.  ubidots supports graphs, UI, notifications, and emails.  These features make it ideal for predictive maintenance analysis. We will also get the data in google sheets which will make predictive maintenance analysis more easier.
 
 Hardware :
 - [ESP-32](https://store.ncd.io/product/esp32-iot-wifi-ble-module-with-integrated-usb/)
@@ -73,25 +73,22 @@ The library cannot currently be used with hardware based on the ENC28J60 chip â€
 - Wire.read()
   Receive 1 byte.
 
-# Steps to send data to labview vibration and temperature platform using IoT Long Range Wireless Vibration And Temperature Sensor and ZigBee Coordinator Long Range Wireless Mesh Modem with USB Interface-
+# Steps to send data to Labview vibration and temperature platform using IoT Long Range Wireless Vibration And Temperature Sensor and  Long Range Wireless Mesh Modem with USB Interface-
 
 - First, we need a Labview utility application which is [ncd.io Wireless Vibration and Temperature Sensor.exe](https://github.com/ncdcommunity/Industrial-IoT-Vibration-Temperature-Sensor) file on which data can be viewed.
 
 - This Labview software will work with ncd.io wireless Vibration Temperature sesnor only
 
-- To use this Labview Utility You will need a Wireless to USB router, whihc can be found over here https://store.ncd.io/product/900hp-   s3b-long-range-wireless-mesh-modem-with-usb-interface/
+- To use this UI, you will need to install following drivers Install run time engine from here [64bit](http://www.ni.com/download/labview-run-time-engine-2017/6821/en/)
 
-- To use this UI, you will need to install following drivers Install run time engine from here 64bit http://www.ni.com/download/labview-run-time-engine-2017/6821/en/
+- [32 bit](http://www.ni.com/download/labview-run-time-engine-2017/6822/en/)
 
-- 32 bit http://www.ni.com/download/labview-run-time-engine-2017/6822/en/
+- Install [NI Visa Driver](http://www.ni.com/download/ni-visa-run-time-engine/6647/en/)
 
-- Install NI Visa Driver -- http://www.ni.com/download/ni-visa-run-time-engine/6647/en/
+- Install [LabVIEW Run-Time Engine]( http://www.ni.com/download/labview-run-time-engine-2017-sp1/7191/en/) and [NI-Serial Runtime]  (http://www.ni.com/download/ni-serial-17.0/6613/en/)
 
-- Install Labview Run time serial driver http://www.ni.com/download/ni-serial-17.0/6613/en/ http://www.ni.com/download/labview-run-time-engine-2017-sp1/7191/en/
+- [Getting started guide for this product.](https://ncd.io/long-range-iot-wireless-vibration-sensor-getting-started/)
 
-- Getting strated guide for this product can be found over here https://ncd.io/long-range-iot-wireless-vibration-sensor-getting-started/
-
-- Complete product manual for this product can be found over here https://ncd.io/long-range-iot-wireless-vibration-sensor-product-manual/
 
 ##  Uploading the code  to ESP32 using Arduino IDE:
 - **Download and include the PubSubClient Library and Wire.h Library.**
@@ -120,9 +117,8 @@ The library cannot currently be used with hardware based on the ENC28J60 chip â€
                   
 ![alt tag](https://github.com/mjScientech/-predictive-machine-monitoring-system-using-Ubidots-and-Long-Range-Wireless-Vibration-And-Temp/blob/master/variable1.PNG) 
 
-     Now you are able to view the Temperature and other sensors data which was previously viewed in serial monitor.This
-     happened because the value of  different sensor readings  is passed as a string and store in
-     variable and publish to variable inside  device esp32. 
+    Now you are able to view the Temperature and other sensors data which was previously viewed in the serial monitor. This
+    happened because the value of different sensor readings is passed as a string and store in variable and publish to a variable inside     device esp32. 
 - **Create dashboard in ubidots**
 ![alt tag](https://github.com/mjScientech/https-github.com-mjScientech-ESP32-AND-SI7021/blob/master/dashboard1.JPG)
        
