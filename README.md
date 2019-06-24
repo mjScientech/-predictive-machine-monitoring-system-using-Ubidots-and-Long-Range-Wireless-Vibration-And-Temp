@@ -1,10 +1,7 @@
 # Predictive Maintenance and Machine Health Monitoring
-
-Predictive Maintenance and Machine health monitoring is one of the most critical and important parts of the automation industry. In an automation or production factory these machines work on an average 20 hours per day.  In modern automation, all these machines work together and stay in sync, so its very important that every single machine is healthy.  In the old days, the usual ways to monitor machine health was manual inspection and occasional temperature readings.  With modern day technology, we can monitor these machines 24-7 and analyze the health. By doing this we keep an eye on every single change the machine is going through. The machine health monitoring is also known as predictive maintenance.
-
-**Whats Predictive Maintenance and Machine Health Monitoring?**
-Predictive maintenance and machine health monitoring go side by side.  If we know whats going on with the machine, we can predict when it needs repair or the end of it’s useful life. By knowing these two things we can work on fixing the problem on a schedule without any operational down-time. There are quite a few ways we can monitor device or machine health and a send notification to a technician when a machine needs some attention.  There are few device which are used to connect machine health data:
-
+The rising of new technology i.e, Internet of Things, heavy industry has started adopting sensor-based data collection to solve its biggest challenges, principal among them being process downtime in the form of shutdowns and process delays.
+        Machine monitoring, also called predictive maintenance or condition monitoring, is the practice of monitoring electrical equipment through sensors in order to accumulate diagnostic data. To achieve this, data acquisition systems and data loggers are used to monitor all kinds of equipment, such as boilers, motors, and engines.
+Following condition are measured:
 - Temperature and Humidity Data Monitoring
 - Current and Voltage Monitoring
 - Vibration Monitoring
@@ -15,7 +12,7 @@ Hardware :
 - [IoT Long Range Wireless Vibration And Temperature Sensor](https://store.ncd.io/product/iot-long-range-wireless-vibration-and-temperature-sensor/)
 - [I2C Cable](https://store.ncd.io/product/i2c-cable/)
 - [PARTICLE ELECTRON OR PHOTON COMPATIBLE I2C SHIELD](https://shop.controleverything.com/products/i2c-breakout-for-particle-electron-or-particle-photon)
-- [ZigBee Coordinator Long Range Wireless Mesh Modem with USB Interface](https://store.ncd.io/product/zigbee-coordinator-long-range-wireless-mesh-modem-with-usb-interface/)
+- [ Long Range Wireless Mesh Modem with USB Interface](https://store.ncd.io/product/zigbee-coordinator-long-range-wireless-mesh-modem-with-usb-interface/)
 
 Software Used:
 - Arduino IDE
